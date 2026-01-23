@@ -28,7 +28,7 @@ def luogu_punch():
             msg = f"✅ 打卡成功！\n🎉 运势: {html_msg}"
             print(msg)
         elif code == 201:
-            msg = "✅ 今天已经打过卡了"
+            msg = f"✅ 今天已经打过卡了！\n 防错信息：{data.get('message', '信息')}"
             print(msg)
         else:
             error_msg = data.get('message', '未知错误')
